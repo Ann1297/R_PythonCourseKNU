@@ -19,3 +19,9 @@ print(sum(is.na(my_data$'Ozone')))
 
 #Task 6
 print(mean(my_data$'Ozone', na.rm=TRUE))
+
+#Task 7
+part_data <- subset(my_data, my_data$'Ozone' > 31 & my_data$'Temp' > 90)
+print(part_data)
+
+print(mean(part_data$'Solar.R'))

@@ -11,7 +11,6 @@ my_data <- read.csv(file='hw1_data.csv', header=TRUE, sep=",")
 
 Які назви стовпців файлу даних?
 
-
 ```R
 print(names(my_data))
 ```
@@ -22,7 +21,6 @@ print(names(my_data))
 ## Task 2
 
 Виведіть перші 6 строк фрейму даних.
-
 
 ```R
 print(head(my_data, 6))
@@ -41,7 +39,6 @@ print(head(my_data, 6))
 
 Скільки спостерігань (строк) в дата фреймі?
 
-
 ```R
 print(nrow(my_data))
 ```
@@ -52,7 +49,6 @@ print(nrow(my_data))
 ## Task 4
 
 Виведіть останні 10 строк дата фрейму.
-
 
 ```R
 print(tail(my_data, 10))
@@ -75,7 +71,6 @@ print(tail(my_data, 10))
 
 Як багато значень «NA» в стовпці «Ozone»?
 
-
 ```R
 print(sum(is.na(my_data$'Ozone')))
 ```
@@ -87,7 +82,6 @@ print(sum(is.na(my_data$'Ozone')))
 
 Яке середнє (mean) стовпця «Ozone». Виключити «NA» значення.
 
-
 ```R
 print(mean(my_data$'Ozone', na.rm = TRUE))
 ```
@@ -95,3 +89,33 @@ print(mean(my_data$'Ozone', na.rm = TRUE))
 [1] 42.12931
 ```
 
+## Task 7
+
+Виведіть частину набору даних (subset) зі значенням «Ozone» > 31 та «Temp» > 90. Яке середнє (mean) значень «Solar.R» в цьому наборі даних (subset)?
+
++ Виведіть частину набору даних (subset) зі значенням «Ozone» > 31 та «Temp» > 90
+```R
+part_data <- subset(my_data, my_data$'Ozone' > 31 & my_data$'Temp' > 90)
+print(part_data)
+```
+```R
+    Ozone Solar.R Wind Temp Month Day
+69     97     267  6.3   92     7   8
+70     97     272  5.7   92     7   9
+120    76     203  9.7   97     8  28
+121   118     225  2.3   94     8  29
+122    84     237  6.3   96     8  30
+123    85     188  6.3   94     8  31
+124    96     167  6.9   91     9   1
+125    78     197  5.1   92     9   2
+126    73     183  2.8   93     9   3
+127    91     189  4.6   93     9   4
+```
+
++ Яке середнє (mean) значень «Solar.R» в цьому наборі даних (subset)?
+```R
+print(mean(part_data$'Solar.R'))
+```
+```R
+[1] 212.8
+```
