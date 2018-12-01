@@ -69,13 +69,7 @@ print(length(which(is.na(my_vector))))
 #Task 7
 my_dataframe <- data.frame(d1 = c(5:8), d2 = c('hi','my', 'dear', 'friend'), d3 = c(TRUE, FALSE, TRUE, TRUE))
 print(my_dataframe)
-print(names(my_dataframe))
 
 #Task 8
-print('old names')
-print(names(my_dataframe))
-
 names(my_dataframe) <- c('numbers', 'charaters', 'logicals')
-
-print('new names')
-print(names(my_dataframe))
+print(my_dataframe)
