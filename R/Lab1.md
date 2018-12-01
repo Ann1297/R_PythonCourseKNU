@@ -209,6 +209,21 @@ match(NA, my_vector)
 print(length(which(is.na(my_vector))))
 ```
 ```R
-[1] 5
+[1] 3
 ```
 
+## Task 7
+
+Створити довільний data frame та вивести в консоль.
+
+```R
+my_dataframe <- data.frame(d1 = c(5:8), d2 = c('hi','my', 'dear', 'friend'), d3 = c(TRUE, FALSE, TRUE, TRUE))
+print(my_dataframe)
+```
+```R
+  d1     d2    d3
+1  5     hi  TRUE
+2  6     my FALSE
+3  7   dear  TRUE
+4  8 friend  TRUE
+```

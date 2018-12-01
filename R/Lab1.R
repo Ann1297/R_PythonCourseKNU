@@ -65,3 +65,7 @@ print(my_factor)
 my_vector <- c(1, 2, 3, 4, NA, 6, 7, NA, 9, NA, 11)
 print(match(NA, my_vector))
 print(length(which(is.na(my_vector))))
+
+#Task 7
+my_dataframe <- data.frame(d1 = c(5:8), d2 = c('hi','my', 'dear', 'friend'), d3 = c(TRUE, FALSE, TRUE, TRUE))
+print(my_dataframe)
