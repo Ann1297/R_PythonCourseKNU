@@ -51,3 +51,7 @@ m3 <- rbind(c(0.5,1.3, 3.5), c(3.9, 131, 2.8), c(0, 2.2, 4.6), c(2, 7, 5.1))
 print(class(m3))
 print(m3)
 
+#Task 4
+my_list <- list('z', 12.3, 123L, 12+3i, FALSE)
+print(class(my_list))
+print(my_list)
