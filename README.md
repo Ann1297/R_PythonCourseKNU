@@ -11,3 +11,4 @@ __*R programming language*__  📈
 + [Lab 2](/R/Lab2.md)
 + [Lab 3](/R/Lab3.md)
 + [Lab 4](/R/Lab4.md)
++ [Lab 5](/R/Lab5.md) ([pmean.R](/R/pmean.R))
