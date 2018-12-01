@@ -13,3 +13,6 @@ print(nrow(my_data))
 
 #Task 4
 print(tail(my_data, 10))
+
+#Task 5
+print(sum(is.na(my_data$'Ozone')))
