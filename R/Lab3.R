@@ -13,3 +13,24 @@ v <- c(1:20)
 print(above(v))
 #example where a custom n value is used (n=15)
 print(above(v, 15))
+
+#Task 3
+my_ifelse <- function(x, exp, n) {
+  #here we compare argument 'exp' to all possible values, perform needed operation and return the result
+  #in case no posible values suit the 'exp' return input vector x
+  if (exp == '>') x[x > n]
+  else if (exp == '<') x[x < n]
+  else if (exp == '<=') x[x <= n]
+  else if (exp == '>=') x[x >= n]
+  else if (exp == '==') x[x == n]
+  else x
+}
+
+v <- c(1:20)
+n <- 10
+print(my_ifelse(v, '>', n))
+print(my_ifelse(v, '<', n))
+print(my_ifelse(v, '<=', n))
+print(my_ifelse(v, '>=', n))
+print(my_ifelse(v, '==', n))
+print(my_ifelse(v, 'hoho', n))
