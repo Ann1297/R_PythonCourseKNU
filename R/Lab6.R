@@ -27,3 +27,9 @@ is_any_element_more_than_two <- function(x) {
 }
 
 print(apply(mat, 2, is_any_element_more_than_two))
+
+#Task 8
+list1 <- list(observationA = c(1:5, 7:3), observationB = matrix(1:6, nrow=2))
+print(list1)
+
+print(lapply(list1, sum))

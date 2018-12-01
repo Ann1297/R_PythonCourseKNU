@@ -115,3 +115,34 @@ print(apply(mat, 2, is_any_element_more_than_two))
 ```R
 [1] FALSE FALSE FALSE FALSE  TRUE
 ```
+
+## Task 8
+
+Створить список list1 <- list(observationA = c(1:5, 7:3), observationB = matrix(1:6, nrow=2)). Для цього списку знайдіть sum за допомогою lapply.
+
++ Створений список
+```R
+list1 <- list(observationA = c(1:5, 7:3), observationB = matrix(1:6, nrow=2))
+print(list1)
+```
+```R
+$`observationA`
+ [1] 1 2 3 4 5 7 6 5 4 3
+
+$observationB
+     [,1] [,2] [,3]
+[1,]    1    3    5
+[2,]    2    4    6
+```
+
++ Знайдення sum з функцією lapply
+```R
+print(lapply(list1, sum))
+```
+```R
+$`observationA`
+[1] 40
+
+$observationB
+[1] 21
+```
