@@ -25,3 +25,6 @@ part_data <- subset(my_data, my_data$'Ozone' > 31 & my_data$'Temp' > 90)
 print(part_data)
 
 print(mean(part_data$'Solar.R'))
+
+#Task 8
+print(mean(my_data$'Temp'[my_data$'Month' == 6]))

@@ -119,3 +119,14 @@ print(mean(part_data$'Solar.R'))
 ```R
 [1] 212.8
 ```
+
+## Task 8
+
+Яке середнє значення (mean) для «Temp» для червня («Month» дорівнює 6)?
+
+```R
+print(mean(my_data$'Temp'[my_data$'Month' == 6]))
+```
+```R
+[1] 79.1
+```
