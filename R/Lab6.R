@@ -35,6 +35,5 @@ print(list1)
 print(lapply(list1, sum))
 
 #Task 9
-print(lapply(list1, range))
-
-print(sapply(list1, range))
+grouped <- with(InsectSprays, split(count, spray))
+print(sapply(grouped, mean))

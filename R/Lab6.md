@@ -172,3 +172,16 @@ print(sapply(list1, range))
 [1,]            1            1
 [2,]            7            6
 ```
+
+## Task 10
+
+Для вбудованого набору даних InsectSprays знайти середнє count для кожного spray.
+
+```R
+grouped <- with(InsectSprays, split(count, spray))
+print(sapply(grouped, mean))
+```
+```R
+        A         B         C         D         E         F 
+14.500000 15.333333  2.083333  4.916667  3.500000 16.666667
+```
