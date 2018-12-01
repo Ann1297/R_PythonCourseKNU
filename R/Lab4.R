@@ -4,3 +4,6 @@ my_data <- read.csv(file='hw1_data.csv', header=TRUE, sep=",")
 
 #Task 1
 print(names(my_data))
+
+#Task 2
+print(head(my_data))
