@@ -33,3 +33,8 @@ list1 <- list(observationA = c(1:5, 7:3), observationB = matrix(1:6, nrow=2))
 print(list1)
 
 print(lapply(list1, sum))
+
+#Task 9
+print(lapply(list1, range))
+
+print(sapply(list1, range))

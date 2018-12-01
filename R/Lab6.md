@@ -146,3 +146,29 @@ $`observationA`
 $observationB
 [1] 21
 ```
+
+## Task 9
+
+Для кожного елементу списку list1 знайдіть максимальне та мінімальне значення (range) за допомогою lapply та sapply.
+
++ lapply
+```R
+print(lapply(list1, range))
+```
+```R
+$`observationA`
+[1] 1 7
+
+$observationB
+[1] 1 6
+```
+
++ sapply
+```R
+print(sapply(list1, range))
+```
+```R
+     observationA observationB
+[1,]            1            1
+[2,]            7            6
+```
