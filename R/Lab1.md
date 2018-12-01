@@ -190,3 +190,25 @@ print(my_factor)
 [1] baby  child baby  baby  adult child child adult
 Levels: adult baby child
 ```
+
+## Task 6
+
+Знайти індекс першого значення NA в векторі 1, 2, 3, 4, NA, 6, 7, NA, 9, NA, 11. Знайти кількість значень NA.
+
++ індекс першого значення NA
+```R
+my_vector <- c(1, 2, 3, 4, NA, 6, 7, NA, 9, NA, 11)
+match(NA, my_vector)
+```
+```R
+[1] 5
+```
+
++ кількість значень NA
+```R
+print(length(which(is.na(my_vector))))
+```
+```R
+[1] 5
+```
+

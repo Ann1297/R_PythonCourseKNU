@@ -60,3 +60,8 @@ print(my_list)
 my_factor <- factor(c('baby', 'child', 'baby', 'baby', 'adult', 'child', 'child', 'adult'))
 print(class(my_factor))
 print(my_factor)
+
+#Task 6
+my_vector <- c(1, 2, 3, 4, NA, 6, 7, NA, 9, NA, 11)
+print(match(NA, my_vector))
+print(length(which(is.na(my_vector))))
