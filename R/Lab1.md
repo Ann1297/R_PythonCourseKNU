@@ -227,3 +227,20 @@ print(my_dataframe)
 3  7   dear  TRUE
 4  8 friend  TRUE
 ```
+
+## Task 8
+
+Змінити імена стовпців цього data frame.
+
+```R
+names(my_dataframe) <- c('numbers', 'charaters', 'logicals')
+print(my_dataframe)
+```
+
+```R
+  numbers charaters logicals
+1       5        hi     TRUE
+2       6        my    FALSE
+3       7      dear     TRUE
+4       8    friend     TRUE
+```
