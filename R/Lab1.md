@@ -158,7 +158,6 @@ my_list <- list('z', 12.3, 123L, 12+3i, FALSE)
 print(class(my_list))
 print(my_list)
 ```
-
 ```R
 [1] "list"
 [[1]]
@@ -175,4 +174,19 @@ print(my_list)
 
 [[5]]
 [1] FALSE
+```
+
+## Task 5
+
+Створити фактор з трьома рівнями «baby», «child», «adult».
+
+```R
+my_factor <- factor(c('baby', 'child', 'baby', 'baby', 'adult', 'child', 'child', 'adult'))
+print(class(my_factor))
+print(my_factor)
+```
+```R
+[1] "factor"
+[1] baby  child baby  baby  adult child child adult
+Levels: adult baby child
 ```

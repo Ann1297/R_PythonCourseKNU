@@ -55,3 +55,8 @@ print(m3)
 my_list <- list('z', 12.3, 123L, 12+3i, FALSE)
 print(class(my_list))
 print(my_list)
+
+#Task 5
+my_factor <- factor(c('baby', 'child', 'baby', 'baby', 'adult', 'child', 'child', 'adult'))
+print(class(my_factor))
+print(my_factor)
