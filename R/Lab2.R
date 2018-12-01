@@ -21,3 +21,13 @@ print(y[10:20,])
 print(y[10, 'b'])
 
 print(y[,'cc'])
+
+#Task 3
+z <- c(1, 2, 3, NA, 4, NA, 5, NA)
+print(z)
+
+print(z[!is.na(z)])
+
+print(mean(z, na.rm = TRUE))
+
+print(mean(z))
