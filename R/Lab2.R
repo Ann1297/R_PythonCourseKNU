@@ -6,7 +6,7 @@ print(normals[10])
 
 print(normals[10:20])
 
-print(normals[20:(20+10)])
+print(normals[20:(20+9)])
 
 print(normals[normals > 0])
 
