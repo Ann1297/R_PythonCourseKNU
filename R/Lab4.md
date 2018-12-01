@@ -130,3 +130,15 @@ print(mean(my_data$'Temp'[my_data$'Month' == 6]))
 ```R
 [1] 79.1
 ```
+
+## Task 9
+
+Яке максимальне значення «Ozone» для травня («Month» дорівнює 5)?
+
+```R
+#here we have NAs so ignore them while detecting max value
+print(max(my_data$'Ozone'[my_data$'Month' == 5], na.rm = TRUE))
+```
+```R
+[1] 115
+```

@@ -27,4 +27,5 @@ print(part_data)
 print(mean(part_data$'Solar.R'))
 
 #Task 8
-print(mean(my_data$'Temp'[my_data$'Month' == 6]))
+#here we have NAs so ignore them while detecting max value
+print(max(my_data$'Ozone'[my_data$'Month' == 5], na.rm = TRUE))
