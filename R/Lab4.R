@@ -10,3 +10,6 @@ print(head(my_data, 6))
 
 #Task 3
 print(nrow(my_data))
+
+#Task 4
+print(tail(my_data, 10))
