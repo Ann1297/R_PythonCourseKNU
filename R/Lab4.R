@@ -16,3 +16,6 @@ print(tail(my_data, 10))
 
 #Task 5
 print(sum(is.na(my_data$'Ozone')))
+
+#Task 6
+print(mean(my_data$'Ozone', na.rm=TRUE))

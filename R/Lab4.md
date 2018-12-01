@@ -82,3 +82,16 @@ print(sum(is.na(my_data$'Ozone')))
 ```R
 [1] 37
 ```
+
+## Task 6
+
+Яке середнє (mean) стовпця «Ozone». Виключити «NA» значення.
+
+
+```R
+print(mean(my_data$'Ozone', na.rm = TRUE))
+```
+```R
+[1] 42.12931
+```
+
