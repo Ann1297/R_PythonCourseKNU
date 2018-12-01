@@ -35,3 +35,19 @@ v3 <- c(rep(TRUE, 100))
 print(class(v3))
 print(v3)
 
+#Task 3
+#matrix
+m1 <- matrix(c(0.5, 1.3, 3.5, 3.9, 131, 2.8, 0, 2.2, 4.6, 2, 7, 5.1), nrow=4, byrow = TRUE)
+print(class(m1))
+print(m1)
+
+#cbind
+m2 <- cbind(c(0.5, 3.9, 0, 2), c(1.3, 131, 2.2, 7), c(3.5, 2.8, 4.6, 5.1))
+print(class(m2))
+print(m2)
+
+#rbind
+m3 <- rbind(c(0.5,1.3, 3.5), c(3.9, 131, 2.8), c(0, 2.2, 4.6), c(2, 7, 5.1))
+print(class(m3))
+print(m3)
+
