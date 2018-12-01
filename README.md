@@ -15,4 +15,4 @@ __*R labs*__  📈
 + [Lab 6](/R/Lab6.md)
 
 __*Python labs*__ 🐍
-+ [Lab 6](/Python/Lab_Python.ipynb)
++ [Lab](/Python/Lab_Python.ipynb)
