@@ -36,7 +36,10 @@ print(my_ifelse(v, '==', n))
 print(my_ifelse(v, 'hoho', n))
 
 #Task 4
-#columnmean <- function(x, removeNA) {
-#  mean[x[]]
-#}
-colMeans(v)
+#here we use colMeans function which does the same
+columnmean <- function(x, removeNA = TRUE) colMeans(x, na.rm = removeNA)
+
+m <- cbind(c(1,2,NA,3,4), c(5,6,7,NA,8), c(9:13))
+print(m)
+print(columnmean(m))
+print(columnmean(m, FALSE))
