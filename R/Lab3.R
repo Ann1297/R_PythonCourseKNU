@@ -34,3 +34,9 @@ print(my_ifelse(v, '<=', n))
 print(my_ifelse(v, '>=', n))
 print(my_ifelse(v, '==', n))
 print(my_ifelse(v, 'hoho', n))
+
+#Task 4
+#columnmean <- function(x, removeNA) {
+#  mean[x[]]
+#}
+colMeans(v)

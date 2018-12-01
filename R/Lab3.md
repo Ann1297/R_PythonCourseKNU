@@ -107,3 +107,40 @@ print(my_ifelse(v, 'hoho', n))
 ```R
  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
 ```
+
+## Task 4
+
+Функція columnmean(x, removeNA), яка розраховує середнє значення (mean) по кожному стовпцю матриці, або data frame. Логічний параметр removeNA вказує, чи видаляти NA значення. По замовчуванню він дорівнює TRUE.
+
+```R
+#here we use colMeans function which does the same
+columnmean <- function(x, removeNA = TRUE) colMeans(x, na.rm = removeNA)
+```
+
+```R
+m <- cbind(c(1,2,NA,3,4), c(5,6,7,NA,8), c(9:13))
+print(m)
+```
+```R
+     [,1] [,2] [,3]
+[1,]    1    5    9
+[2,]    2    6   10
+[3,]   NA    7   11
+[4,]    3   NA   12
+[5,]    4    8   13
+```
+
++ Результати роботи функції
+```R
+print(columnmean(m))
+```
+```R
+[1]  2.5  6.5 11.0
+```
+
+```R
+print(columnmean(m, FALSE))
+```
+```R
+[1] NA NA 11
+```
